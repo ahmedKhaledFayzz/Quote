@@ -1,0 +1,49 @@
+/* شاشة التحميل */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  font-family: "Tajawal", sans-serif;
+}
+
+/* صندوق الاقتباس */
+.quote-box {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  padding: 20px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+/* أيقونة الاقتباس */
+.quote-icon {
+  font-size: 50px;
+  color: #3a3835; /* لون الاقتباس */
+  animation: pulse 1s infinite; /* تأثير نبض */
+  margin-bottom: 10px;
+}
+
+/* النص */
+.quote-box p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* تأثير النبض */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3.1);
+  }
+}

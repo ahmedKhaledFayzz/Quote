@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.app-info {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.app-info p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+
+.favorite-quote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-left: 4px solid #6c63ff;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #dc3545;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    color: #c82333;
+    transform: scale(1.1);
+}
+
+
+
+
+.quote-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 19px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+.quote-container::before {
+    content: '\201C';
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 150px;
+    color: rgba(0, 0, 0, 0.1);
+    font-family: serif;
+}
+
+.quote {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-custom {
+    background-color: #6c63ff;
+    border: none;
+    color: white;
+    border-radius: 80px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #5750ff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}
+
+.favorites-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.quote-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#shareButton {
+    padding: 20px;
+}
+
+.share-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    width: 90%;
+    max-width: 500px;
+}
+
+.share-dialog .share-content {
+    text-align: center;
+}
+
+.share-dialog .btn-custom {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+.share-dialog .social-share a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.share-dialog .app-info {
+    margin-top: 20px;
+}
+
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
