@@ -154,7 +154,7 @@ function shareQuote() {
   const appName = "اقتباسات ملهمة";
   const developerName = "أحمد خالد";
   const appDownloadLink =
-    "https://drive.google.com/drive/folders/1-RsaL0iT20HPxG7jFgliz-tnLV-bV5m2"; // استبدل هذا برابط التنزيل الفعلي للتطبيق
+    "https://drive.google.com/drive/folders/1-RsaL0iT20HPxG7jFgliz-tnLV-bV5m2?usp=sharing"; // استبدل هذا برابط التنزيل الفعلي للتطبيق
 
   const shareText = `"${currentQuote}"
 
